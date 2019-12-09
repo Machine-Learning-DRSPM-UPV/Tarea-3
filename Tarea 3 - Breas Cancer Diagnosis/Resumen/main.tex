@@ -1,0 +1,86 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[activeacute,spanish]{babel}
+%\usepackage[ansinew]{inputenc}
+\usepackage[utf8]{inputenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[letterpaper,includeheadfoot, top=0.5cm, bottom=3.0cm, right=2.0cm, left=2.0cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{url}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{colortbl}
+
+\usepackage{listings} %Codigo
+\lstset{language=C, tabsize=4,framexleftmargin=5mm,breaklines=true}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PARCHE PARA PERMIRIR UTILIZAR BIBLATEX EN ESTA PANTLLA
+%\PassOptionsToPackage{square,numbers}{natbib}
+%\RequirePackage{natbib}  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+% Estas lineas permiten romper los hipervinculos muy largos !!!!
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+\addbibresource{references.bib}
+
+% Actualiza en automático la fecha de las citas de internet a la fecha de la compilación del documento
+\usepackage{datetime}
+\newdateformat{specialdate}{\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR}
+\date{\specialdate\today}
+
+\begin{document}
+%\begin{sf}
+% --------------- ---------PORTADA --------------------------------------------
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+%------------------ TÍTULO -----------------------
+\vspace*{6cm}
+\begin{center}
+\Huge  {Breas Cancer Diagnostic and Prognosis Via Linear Programing}
+\vspace{1cm}
+\end{center}
+%----------------- NOMBRES ------------------------
+\begin{center}
+\begin{tabular}{ll}
+Autor: & José Luis Pérez Avila\\
+& Cd. Victoria, Tamaulipas.
+\end{tabular}
+\end{center}
+%\date{}
+
+\section{Definicion del Problema}
+El \textbf{obejtivo} que desarrolla este artículo es el de usar una técnica de machine learning basado en pogramación linear para incrementar la precision y objetividad del diagnostico y que tan avanzado se encuentra el cancer de mama. 
+
+Las \textbf{preguntas} que se desarrollaron fueron, 1. ¿Cuantas mujeres en Estados Unidos han sido diagnosticadas en 1987 y cuantas moriran por ello?, ¿Es posible que una mujer sobreviva al cancer de mama si se le da tratamiento en una fase tembrana de este?.
+
+Su \textbf{justificación} es que el implementar el tratamiento correcto a una mujer con cancer de mama en una etapa temprana influencia mucho en pronostico a largo plazo.
+
+La \textbf{viabilidad} es utilizar dos aplicaciones significativas de programación lineal en el campo de investigación del cancer de mama, un programa de computadora llamado Xcyt y un dataset entrenado con 569 pacientes.
+
+\textbf{Concecuencias} del estudio, al encontrar una forma de diagnosticar el cancer de mama mas efectiva sería de gran utilidad para el área de medicina detectando el cancer de manera precisa y en que etapa de encuentra.
+
+La \textbf{hipotesis} es implementar una técnica de machine learning basado en programación linear para incrementar la precisión, objetividad del diagnostico y que tan avanzado se encuentra el cancer de mamá en Estados unidos y reducir la tasa de mortalidad por esta enfermedad. 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
